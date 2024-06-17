@@ -21,5 +21,5 @@ public class AccountRecordType {
     private String name;
 
     @OneToMany(mappedBy = "accountRecordType", cascade = CascadeType.ALL)
-    private List<AccountRecord> accounts;
+    private List<AccountRecord> accountRecords;
 }

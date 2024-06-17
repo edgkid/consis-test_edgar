@@ -35,6 +35,6 @@ public class Account {
     private Person person;
 
     @OneToMany(mappedBy = "account", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<AccountRecord> accounts;
+    private List<AccountRecord> accountRecords;
 
 }
