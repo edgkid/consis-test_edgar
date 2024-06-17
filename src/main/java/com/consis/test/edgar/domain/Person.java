@@ -38,10 +38,10 @@ public class Person {
     @Column(name = "address")
     private String address;
 
-    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
     private List<UserClient> userInfo;
 
-    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
     private List<Account> accounts;
 
 }

@@ -25,6 +25,4 @@ public class UserClient {
     @JoinColumn(name = "person_id")
     @JsonBackReference("person")
     private Person person;
-
-
 }

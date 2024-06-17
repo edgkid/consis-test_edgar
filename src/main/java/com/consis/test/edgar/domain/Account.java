@@ -26,10 +26,12 @@ public class Account {
 
     @ManyToOne
     @JoinColumn(name = "type_account_id")
+    @JsonBackReference("typeAccount")
     private TypeAccount typeAccount;
 
     @ManyToOne
     @JoinColumn(name = "person_id")
+    @JsonBackReference("person")
     private Person person;
 
     @OneToMany(mappedBy = "account", cascade = CascadeType.ALL, fetch = FetchType.EAGER)

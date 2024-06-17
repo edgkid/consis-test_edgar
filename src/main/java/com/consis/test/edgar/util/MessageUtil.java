@@ -17,4 +17,11 @@ public class MessageUtil {
     public static String MSG_OPERATION_BADREQUEST_DESCRIPTON = "Formato Request No Valido";
     public static String MSG_OPERATION_ERROR_DESCRIPTION = "Ocurrio un Error Interno";
 
+    public static String MSG_OPERATION_TRANSACTION_INVALID = "Operación Invalida";
+
+    public static String MSG_OPERATION_TRANSACTION_INVALID_BY_AMOUNT= "Cupo diario Excedido”";
+
+    public static String MSG_OPERATION_TRANSACTION_INVALID_BY_0 = "Saldo no Diponible";
+
+
 }

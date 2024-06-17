@@ -1,6 +1,7 @@
 package com.consis.test.edgar.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,10 +30,12 @@ public class AccountRecord {
 
     @ManyToOne
     @JoinColumn(name = "account_record_type_id")
+    @JsonBackReference("accountRecordType")
     private AccountRecordType accountRecordType;
 
     @ManyToOne
     @JoinColumn(name = "account_id")
+    @JsonBackReference("account")
     private Account account;
 
 }
